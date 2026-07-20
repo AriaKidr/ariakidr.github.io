@@ -1,48 +1,247 @@
 <!DOCTYPE HTML>
 <!-- Aerial by HTML5 UP | html5up.net | CCA 3.0 license -->
-<html>
+<html lang="en">
 <head>
-<title>Aria Kidr | Theoretical Physics</title>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-<link rel="stylesheet" href="assets/css/main.css" />
-<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <title>Aria Kidr | Theoretical Physics</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-<style>
-#header nav ul li { position: relative; }
-#header nav ul li a::after {
-    content: attr(data-label); position: absolute; left: 50%; top: calc(100% + 0.8em);
-    transform: translate(-50%, -0.35em); padding: 0.35em 0.7em;
-    border-radius: 0.35em; background: rgba(0,0,0,0.65); color: #fff;
-    font-family: Arial,sans-serif; font-size: 0.35em; font-weight: normal;
-    letter-spacing: 0.08em; line-height: 1.4; text-transform: none;
-    white-space: nowrap; opacity: 0; visibility: hidden; pointer-events: none;
-    transition: opacity .2s ease, transform .2s ease, visibility .2s ease;
-}
-#header nav ul li a:hover::after, #header nav ul li a:focus::after {
-    opacity: 1; visibility: visible; transform: translate(-50%,0);
-}
-</style>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <style>
+        /*
+            ============================================================
+            SPEED CONTROLS
+            Change only these values to adjust how quickly things appear.
+            Smaller values are faster. Use 0s for instant appearance.
+            ============================================================
+        */
+        :root {
+            --page-fade-time: 0.16s;
+            --overlay-fade-time: 0.16s;
+            --text-appear-time: 0.2s;
+            --text-delay: 0s;
+            --logo-appear-time: 0.10s;
+            --logo-delay: 0.02s;
+            --logo-gap: 0.02s;
+        }
+
+        /* Override the slow animations built into the Aerial template. */
+        #wrapper {
+            animation: fast-fade var(--page-fade-time) ease-out forwards !important;
+            opacity: 0;
+        }
+
+        #overlay {
+            animation: fast-fade var(--overlay-fade-time) ease-out forwards !important;
+            opacity: 0;
+        }
+
+        #header {
+            animation: fast-rise var(--text-appear-time) ease-out var(--text-delay) forwards !important;
+            opacity: 0;
+        }
+
+        #header nav li {
+            animation: fast-rise var(--logo-appear-time) ease-out forwards !important;
+            opacity: 0;
+        }
+
+        /* Small stagger between icons. Set --logo-gap to 0s for all at once. */
+        #header nav li:nth-child(1) {
+            animation-delay: calc(var(--logo-delay) + var(--logo-gap) * 0) !important;
+        }
+
+        #header nav li:nth-child(2) {
+            animation-delay: calc(var(--logo-delay) + var(--logo-gap) * 1) !important;
+        }
+
+        #header nav li:nth-child(3) {
+            animation-delay: calc(var(--logo-delay) + var(--logo-gap) * 2) !important;
+        }
+
+        #header nav li:nth-child(4) {
+            animation-delay: calc(var(--logo-delay) + var(--logo-gap) * 3) !important;
+        }
+
+        #header nav li:nth-child(5) {
+            animation-delay: calc(var(--logo-delay) + var(--logo-gap) * 4) !important;
+        }
+
+        @keyframes fast-fade {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fast-rise {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 0.12em, 0);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        #header nav ul li {
+            position: relative;
+        }
+
+        #header nav ul li a {
+            position: relative;
+            z-index: 10;
+            cursor: pointer;
+            pointer-events: auto;
+        }
+
+        /* Ensure decorative layers never block the links. */
+        #bg,
+        #overlay {
+            pointer-events: none;
+        }
+
+        /* Labels displayed when an icon is hovered or keyboard-focused. */
+        #header nav ul li a::after {
+            content: attr(data-label);
+            position: absolute;
+            left: 50%;
+            top: calc(100% + 0.8em);
+            transform: translate(-50%, -0.25em);
+            padding: 0.35em 0.7em;
+            border-radius: 0.35em;
+            background: rgba(0, 0, 0, 0.65);
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            font-size: 0.35em;
+            font-weight: normal;
+            letter-spacing: 0.08em;
+            line-height: 1.4;
+            text-transform: none;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: opacity 0.1s ease, transform 0.1s ease, visibility 0.1s ease;
+        }
+
+        #header nav ul li a:hover::after,
+        #header nav ul li a:focus::after {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-50%, 0);
+        }
+
+        /* Visitors who prefer reduced motion see everything immediately. */
+        @media (prefers-reduced-motion: reduce) {
+            #wrapper,
+            #overlay,
+            #header,
+            #header nav li,
+            #bg {
+                animation: none !important;
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        }
+    </style>
 </head>
+
 <body class="is-preload">
-<div id="wrapper"><div id="bg"></div><div id="overlay"></div><div id="main">
-<header id="header">
-<h1>Aria Kidr</h1>
-<p>Theoretical Physics Student &nbsp;&bull;&nbsp; University of Birmingham &nbsp;&bull;&nbsp; Third Year</p>
-<nav><ul>
-<li><a href="github.html" class="icon brands fa-github" data-label="GitHub"><span class="label">GitHub</span></a></li>
-<li><a href="linkedin.html" class="icon brands fa-linkedin-in" data-label="LinkedIn"><span class="label">LinkedIn</span></a></li>
-<li><a href="contact.html" class="icon solid fa-envelope" data-label="Contact Me"><span class="label">Contact Me</span></a></li>
-<li><a href="about.html" class="icon solid fa-user" data-label="About Me"><span class="label">About Me</span></a></li>
-<li><a href="cv.html" class="icon solid fa-file-alt" data-label="CV"><span class="label">CV</span></a></li>
-</ul></nav>
-</header>
-<footer id="footer"><span class="copyright">&copy; Aria Kidr. Design: <a href="http://html5up.net">HTML5 UP</a>.</span></footer>
-</div></div>
-<script>
-window.onload=function(){document.body.classList.remove('is-preload');}
-window.ontouchmove=function(){return false;}
-window.onorientationchange=function(){document.body.scrollTop=0;}
-</script>
+    <div id="wrapper">
+        <div id="bg"></div>
+        <div id="overlay"></div>
+
+        <div id="main">
+            <header id="header">
+                <h1>Aria Kidr</h1>
+
+                <p>
+                    Theoretical Physics Student
+                    &nbsp;&bull;&nbsp;
+                    University of Birmingham
+                    &nbsp;&bull;&nbsp;
+                    Third Year
+                </p>
+
+                <nav aria-label="Main navigation">
+                    <ul>
+                        <li>
+                            <a href="github.html"
+                               class="icon brands fa-github"
+                               data-label="GitHub"
+                               aria-label="Open my GitHub page">
+                                <span class="label">GitHub</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="linkedin.html"
+                               class="icon brands fa-linkedin-in"
+                               data-label="LinkedIn"
+                               aria-label="Open my LinkedIn page">
+                                <span class="label">LinkedIn</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html"
+                               class="icon solid fa-envelope"
+                               data-label="Contact Me"
+                               aria-label="Open my contact page">
+                                <span class="label">Contact Me</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html"
+                               class="icon solid fa-user"
+                               data-label="About Me"
+                               aria-label="Open my About Me page">
+                                <span class="label">About Me</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="cv.html"
+                               class="icon solid fa-file-alt"
+                               data-label="CV"
+                               aria-label="Open my CV page">
+                                <span class="label">CV</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <footer id="footer">
+                <span class="copyright">
+                    &copy; Aria Kidr. Design:
+                    https://html5up.net.
+                </span>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        /*
+            This runs as soon as the HTML is ready. Unlike window.onload,
+            it does not wait for every background image and asset.
+        */
+        document.addEventListener("DOMContentLoaded", function () {
+            document.body.classList.remove("is-preload");
+        });
+
+        window.addEventListener("orientationchange", function () {
+            window.scrollTo(0, 0);
+        });
+    </script>
 </body>
 </html>
