@@ -1,0 +1,491 @@
+
+<!DOCTYPE HTML>
+<!--
+    Aerial by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+    <head>
+        <title>About Me | Aria Kidr</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta
+            name="description"
+            content="Learn about Aria Kidr, an MSci Theoretical Physics student at the University of Birmingham with interests in computational physics, statistical mechanics, astrophysics and machine learning."
+        />
+
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+        <style>
+            body {
+                overflow-y: auto;
+            }
+
+            #wrapper {
+                min-height: 100%;
+                height: auto;
+                overflow-x: hidden;
+                overflow-y: auto;
+                position: relative;
+            }
+
+            #main {
+                position: relative;
+                min-height: 100vh;
+                height: auto;
+                overflow: visible;
+                padding: 2.5em 1em 4em;
+            }
+
+            #main::before {
+                display: none;
+            }
+
+            #header {
+                position: relative;
+                top: auto;
+                left: auto;
+                width: min(92%, 58em);
+                margin: 0 auto;
+                opacity: 1;
+                transform: none;
+                animation: page-entry 0.35s ease-out forwards !important;
+            }
+
+            #header h1 {
+                font-size: 2.6em;
+            }
+
+            #header > p {
+                margin-bottom: 0;
+            }
+
+            @keyframes page-entry {
+                from {
+                    opacity: 0;
+                    transform: translateY(0.4em);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            #bg,
+            #overlay {
+                pointer-events: none;
+            }
+
+            .card {
+                max-width: 50em;
+                margin: 1.5em auto 0;
+                padding: 1.75em 2em;
+                border: 1px solid rgba(255, 255, 255, 0.4);
+                border-radius: 0.5em;
+                background: rgba(0, 0, 0, 0.4);
+                text-align: left;
+                line-height: 1.75;
+                backdrop-filter: blur(4px);
+                -webkit-backdrop-filter: blur(4px);
+            }
+
+            .card h2 {
+                margin: 0 0 0.8em;
+                font-size: 1.4em;
+                font-weight: 900;
+                letter-spacing: 0.01em;
+                text-transform: none;
+            }
+
+            .card h3 {
+                margin: 1.9em 0 0.75em;
+                padding-bottom: 0.35em;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+                font-size: 1.1em;
+                font-weight: 900;
+                letter-spacing: 0.025em;
+                line-height: 1.4;
+                text-transform: none;
+            }
+
+            .card p {
+                margin: 0 0 1.05em;
+                letter-spacing: 0.025em;
+                line-height: 1.75;
+                text-transform: none;
+            }
+
+            .card strong {
+                font-weight: 900;
+            }
+
+            .card a {
+                color: #ffffff;
+                font-weight: 900;
+                border-bottom: 1px dotted rgba(255, 255, 255, 0.8);
+            }
+
+            .card a:hover,
+            .card a:focus {
+                border-bottom-color: transparent;
+            }
+
+            .skills-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.55em;
+                margin: 1.25em 0 1.5em;
+            }
+
+            .skills-list span {
+                display: inline-block;
+                padding: 0.4em 0.75em;
+                border: 1px solid rgba(255, 255, 255, 0.4);
+                border-radius: 999px;
+                background: rgba(255, 255, 255, 0.08);
+                font-size: 0.82em;
+                line-height: 1.4;
+                letter-spacing: 0.025em;
+            }
+
+            .button-link {
+                display: inline-block;
+                margin: 1.4em 0.25em 0;
+                padding: 0.65em 1em;
+                border: 1px solid rgba(255, 255, 255, 0.6);
+                border-radius: 0.35em;
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+            .button-link:hover,
+            .button-link:focus {
+                background: rgba(255, 255, 255, 0.12);
+            }
+
+            #footer {
+                position: relative;
+                bottom: auto;
+                height: auto;
+                margin-top: 2.5em;
+                padding: 2em 1em 1em;
+                line-height: 1.5;
+            }
+
+            @media screen and (max-width: 736px) {
+                #main {
+                    padding: 1.5em 0.75em 3em;
+                }
+
+                #header {
+                    width: 100%;
+                }
+
+                #header h1 {
+                    font-size: 2.25em;
+                }
+
+                .card {
+                    padding: 1.25em;
+                }
+
+                .card h3 {
+                    line-height: 1.4;
+                }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                #header,
+                #bg {
+                    animation: none !important;
+                }
+            }
+        </style>
+    </head>
+
+    <body class="is-preload">
+        <div id="wrapper">
+            <div id="bg"></div>
+            <div id="overlay"></div>
+
+            <div id="main">
+                <header id="header">
+                    <h1>About Me</h1>
+                    <p>Theoretical Physics &nbsp;&bull;&nbsp; University of Birmingham</p>
+
+                    <section class="card">
+                        <h2>About Me</h2>
+
+                        <p>
+                            I am an MSci Theoretical Physics student at the University of Birmingham,
+                            currently progressing into the third year of my degree. I have achieved a
+                            first-class average in both my first and second years, and I am continuing
+                            to develop my understanding of theoretical physics through academic study,
+                            independent programming and university research.
+                        </p>
+
+                        <p>
+                            My interests currently lie at the intersection of theoretical physics,
+                            computational modelling and scientific data analysis. I particularly enjoy
+                            problems where mathematical ideas can be translated into simulations,
+                            algorithms or numerical experiments. Computational work allows me to examine
+                            systems that may be difficult to solve analytically, investigate their response
+                            to changing parameters and communicate the resulting physical behaviour through
+                            visualisations and reproducible code.
+                        </p>
+
+                        <h3>Computational Physics and the Ising Model</h3>
+
+                        <p>
+                            My first university research experience was as a Summer Research Assistant
+                            in the Theoretical Physics Group at the University of Birmingham. During this
+                            placement, I worked under the supervision of Professor Mark Dennis and Dr Jonathan Watkins on the computational
+                            modelling of phase transitions.
+                        </p>
+
+                        <p>
+                            The central focus of this work was the two-dimensional Ising model, a model
+                            from statistical mechanics that represents a material as a lattice of interacting
+                            spins. Each spin can occupy one of two states, and the collective behaviour of
+                            these spins provides a comparatively simple but powerful way to investigate
+                            magnetism, thermal fluctuations, ordered states and phase transitions.
+                        </p>
+
+                        <p>
+                            I developed a Python program that calculates the Hamiltonian energy and
+                            magnetisation of the lattice. I then implemented the Metropolis algorithm to
+                            introduce probabilistic spin changes and simulate the evolution of the system
+                            at different temperatures. This allowed me to explore the relationship between
+                            microscopic spin interactions and macroscopic quantities such as energy and
+                            magnetisation.
+                        </p>
+
+                        <p>
+                            I produced graphs showing how the energy and magnetisation evolved over
+                            successive simulation steps and how their behaviour changed across different
+                            temperatures. I also animated the lattice so that its evolution could be viewed
+                            directly, making it possible to observe ordered regions forming and changing
+                            as the simulation approached lower-energy configurations.
+                        </p>
+
+                        <p>
+                            This project strengthened my understanding of statistical mechanics while
+                            teaching me how to convert mathematical definitions into working computational
+                            procedures. It gave me practical experience in numerical modelling, stochastic
+                            algorithms, data visualisation, debugging and interpreting simulation results.
+                            I documented the program with step-by-step comments and published the work on
+                            GitHub so that other readers could follow the structure and development of the
+                            model.
+                        </p>
+
+                        <p>
+                            My Ising model project is available on my GitHub page.
+                        </p>
+
+                        <h3>Machine Learning and Stellar Data</h3>
+
+                        <p>
+                            I am broadening my research experience through a Summer Research Internship
+                            with the Sun, Stars and Exoplanets Group at the University of Birmingham. This
+                            work has introduced me to a different area of physics by combining astrophysics,
+                            scientific data analysis and machine learning.
+                        </p>
+
+                        <p>
+                            During this project, I have been developing an autoencoder designed to denoise
+                            stellar spectra represented through frequency and power data. An autoencoder is
+                            a neural-network architecture that learns a compressed representation of its
+                            input before reconstructing it. By training the model to preserve meaningful
+                            structure while reducing unwanted noise, it can support the analysis of complex
+                            observational datasets.
+                        </p>
+
+                        <p>
+                            I began by producing artificial data that could be used as a controlled learning
+                            environment. Working with synthetic examples allowed me to observe the behaviour
+                            of the network, understand how changes to its architecture and training process
+                            affected its output, and identify problems before applying the model to real
+                            observations.
+                        </p>
+
+                        <p>
+                            I then progressed to data from the Kepler mission, working with observations
+                            involving thousands of red giant stars. This stage of the project has given me
+                            experience of moving from an idealised computational problem to a large real-world
+                            scientific dataset, where noise, variation and uncertainty form an important part
+                            of the research challenge.
+                        </p>
+
+                        <p>
+                            The internship is developing my understanding of neural networks and their use
+                            in scientific research, while also strengthening my ability to prepare, inspect
+                            and interpret numerical data. It has shown me how methods from computer science
+                            can be adapted to investigate problems in astrophysics and has encouraged me to
+                            explore research areas that connect theoretical ideas with modern computational
+                            tools.
+                        </p>
+
+                        <h3>Teaching and Scientific Communication</h3>
+
+                        <p>
+                            Alongside my degree and research experience, I work remotely as a Mathematics
+                            and Physics tutor. I teach students at GCSE and A-level, helping
+                            them develop their subject knowledge, mathematical reasoning and independent
+                            problem-solving skills.
+                        </p>
+
+                        <p>
+                            Tutoring has strengthened my ability to communicate technical concepts clearly
+                            and adapt an explanation to the needs of an individual student. It has encouraged
+                            me to think carefully about the foundations of the subjects I study. Explaining
+                            an idea effectively requires more than knowing how to apply a formula: it requires
+                            understanding why the method works, how the different steps connect and where
+                            misunderstandings are likely to arise.
+                        </p>
+
+                        <p>
+                            Balancing tutoring with a full-time physics degree and summer research has also
+                            developed my time management, organisation and personal responsibility. These
+                            are qualities that I hope to carry into future research environments, where
+                            independent work must be combined with clear communication and productive
+                            collaboration.
+                        </p>
+
+                        <h3>Technical Skills</h3>
+
+                        <p>
+                            Python is currently my principal programming language and the main tool I use
+                            for computational physics, numerical simulations, scientific data analysis and
+                            machine-learning projects. I also use LaTeX to prepare technical and mathematical
+                            documents, Bash for command-line workflows, and HTML and CSS to develop this
+                            portfolio.
+                        </p>
+
+                        <p>
+                            I am interested not only in obtaining a result, but also in ensuring that my
+                            work is understandable and reproducible. I therefore aim to organise programs
+                            carefully, document their purpose and explain the reasoning behind important
+                            stages of an analysis. As my experience develops, I hope to improve the structure,
+                            efficiency, testing and presentation of my scientific software.
+                        </p>
+
+                        <div class="skills-list" aria-label="Technical skills">
+                            <span>Python</span>
+                            <span>Computational Physics</span>
+                            <span>Numerical Modelling</span>
+                            <span>Machine Learning</span>
+                            <span>Scientific Data Analysis</span>
+                            <span>Statistical Mechanics</span>
+                            <span>LaTeX</span>
+                            <span>Bash</span>
+                            <span>HTML and CSS</span>
+                            <span>Scientific Communication</span>
+                        </div>
+
+                        <h3>Collaboration and Wider Experience</h3>
+
+                        <p>
+                            I received a Birmingham Project award after working in a multidisciplinary team
+                            on a challenge connected with Siemens. Our project considered how Siemens
+                            technologies could be integrated to support sustainable education across a
+                            university campus. This experience allowed me to work with people from different
+                            academic backgrounds and contribute to a problem whose technological, educational
+                            and environmental elements extended beyond a single discipline.
+                        </p>
+
+                        <p>
+                            Before university, I worked as a furniture assembler at DH Furniture Group Ltd.
+                            In this role, I operated and maintained a CNC machine, followed technical
+                            specifications, responded to minor operational problems and worked with others
+                            to meet production targets. Although this role was outside physics, it helped me
+                            develop practical problem-solving skills, attention to detail and an appreciation
+                            of how technical processes operate in a professional working environment.
+                        </p>
+
+                        <h3>Future Research and PhD Ambitions</h3>
+
+                        <p>
+                            In the longer term, I am interested in pursuing a PhD in physics. I have not yet
+                            decided on one specific field, and I view the remaining years of my MSci degree
+                            as an opportunity to explore different areas in greater depth before making that
+                            decision.
+                        </p>
+
+                        <p>
+                            My research experiences have so far exposed me to two distinct but connected
+                            directions. My work on the Ising model introduced me to statistical mechanics,
+                            phase transitions, stochastic simulation and computational theoretical physics.
+                            My work with stellar data has introduced me to astrophysics, machine learning and
+                            the analysis of large observational datasets. I have enjoyed both projects,
+                            especially the process of building computational methods that reveal patterns
+                            and physical behaviour within complex systems.
+                        </p>
+
+                        <p>
+                            Because of this, I am currently open-minded about the precise subject of a future
+                            doctorate. Possible areas of interest include computational physics, statistical
+                            mechanics, theoretical astrophysics, stellar physics and the application of
+                            machine learning to physical data. I am also interested in discovering other
+                            fields in which mathematical modelling, numerical simulation and scientific
+                            computing play central roles.
+                        </p>
+
+                        <p>
+                            I hope that a PhD would allow me to investigate a focused research question over
+                            an extended period, develop greater independence as a researcher and make an
+                            original contribution to physics. I am particularly attracted to the combination
+                            of deep theoretical understanding and practical computational investigation, as
+                            well as the collaborative nature of modern research.
+                        </p>
+
+                        <p>
+                            Over the remainder of my degree, I want to deepen my mathematical and physical
+                            knowledge, gain further research experience, improve my programming and data-analysis
+                            skills, and learn more about the research groups and doctoral projects available
+                            across different areas of physics. Rather than choosing a PhD field prematurely,
+                            I want to make an informed decision based on the subjects and research methods
+                            that I find most intellectually rewarding.
+                        </p>
+
+                        <h3>Beyond Physics</h3>
+
+                        <p>
+                            Outside my academic work, I enjoy swimming, playing badminton and writing movie
+                            reviews. These interests give me opportunities to remain active, reflect creatively
+                            and maintain a balance between university, research, tutoring and my personal life.
+                            I also speak English and Kurdish Sorani.
+                        </p>
+
+                        <h3>Current Goals</h3>
+
+                        <p>
+                            My immediate goal is to continue building a broad and rigorous foundation in
+                            theoretical physics while developing the computational skills needed for modern
+                            research. I am keen to undertake further projects, collaborate with researchers,
+                            improve the quality of my public programming portfolio and explore the areas of
+                            physics that may eventually form the basis of my PhD research.
+                        </p>
+                    </section>
+
+                    <a href="index.html" class="button-link">Return Home</a>
+                </header>
+
+                <footer id="footer">
+                    <span class="copyright">
+                        &copy; Aria Kidr. Design:
+                        <a href="https://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a>.
+                    </span>
+                </footer>
+            </div>
+        </div>
+
+        <script>
+            window.addEventListener('DOMContentLoaded', function () {
+                document.body.classList.remove('is-preload');
+            });
+        </script>
+    </body>
+</html>

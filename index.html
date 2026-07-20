@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<!-- Aerial by HTML5 UP | html5up.net | CCA 3.0 license -->
+<html>
+<head>
+<title>Aria Kidr | Theoretical Physics</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+<style>
+#header nav ul li { position: relative; }
+#header nav ul li a::after {
+    content: attr(data-label); position: absolute; left: 50%; top: calc(100% + 0.8em);
+    transform: translate(-50%, -0.35em); padding: 0.35em 0.7em;
+    border-radius: 0.35em; background: rgba(0,0,0,0.65); color: #fff;
+    font-family: Arial,sans-serif; font-size: 0.35em; font-weight: normal;
+    letter-spacing: 0.08em; line-height: 1.4; text-transform: none;
+    white-space: nowrap; opacity: 0; visibility: hidden; pointer-events: none;
+    transition: opacity .2s ease, transform .2s ease, visibility .2s ease;
+}
+#header nav ul li a:hover::after, #header nav ul li a:focus::after {
+    opacity: 1; visibility: visible; transform: translate(-50%,0);
+}
+</style>
+</head>
+<body class="is-preload">
+<div id="wrapper"><div id="bg"></div><div id="overlay"></div><div id="main">
+<header id="header">
+<h1>Aria Kidr</h1>
+<p>Theoretical Physics Student &nbsp;&bull;&nbsp; University of Birmingham &nbsp;&bull;&nbsp; Third Year</p>
+<nav><ul>
+<li><a href="github.html" class="icon brands fa-github" data-label="GitHub"><span class="label">GitHub</span></a></li>
+<li><a href="linkedin.html" class="icon brands fa-linkedin-in" data-label="LinkedIn"><span class="label">LinkedIn</span></a></li>
+<li><a href="contact.html" class="icon solid fa-envelope" data-label="Contact Me"><span class="label">Contact Me</span></a></li>
+<li><a href="about.html" class="icon solid fa-user" data-label="About Me"><span class="label">About Me</span></a></li>
+<li><a href="cv.html" class="icon solid fa-file-alt" data-label="CV"><span class="label">CV</span></a></li>
+</ul></nav>
+</header>
+<footer id="footer"><span class="copyright">&copy; Aria Kidr. Design: <a href="http://html5up.net">HTML5 UP</a>.</span></footer>
+</div></div>
+<script>
+window.onload=function(){document.body.classList.remove('is-preload');}
+window.ontouchmove=function(){return false;}
+window.onorientationchange=function(){document.body.scrollTop=0;}
+</script>
+</body>
+</html>
