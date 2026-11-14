@@ -39,7 +39,7 @@
           <a href="#background">Background</a>
           <a href="#ising">Statistical physics</a>
           <a href="#astronomy">Astronomy and ML</a>
-          <a href="#quant">Quantitative research</a>
+          <a href="#hpc">Scientific computing</a>
           <a href="#approach">Research approach</a>
           <a href="#next">Next steps</a>
         </aside>
@@ -47,40 +47,39 @@
         <article class="prose">
           <section id="background">
             <h2>Background</h2>
-            <p>I am an MSci Theoretical Physics student at the University of Birmingham, currently working at first-class standard. My academic interests are strongest where mathematics, computation and physical interpretation meet. Modules in chaos, Hamiltonian mechanics and data science have been particularly influential because they connect formal models with the behaviour of complex systems.</p>
+            <p>I am an MSci Theoretical Physics student at the University of Birmingham, currently working at a first-class standard with a 75% weighted average. My academic interests are strongest where mathematics, computation and physical interpretation meet. Modules in Chaos (81%), Hamiltonian Mechanics (80%) and Foundations in Data Science (79%) have been particularly influential because they connect formal mathematical models with the behaviour of complex dynamical systems.</p>
             <p>I use computation as a research method rather than only as a way to produce a final answer. Numerical work makes it possible to test assumptions, examine limiting cases and identify behaviour that may not be obvious from the governing equations. The same principle applies to machine learning: performance metrics are useful, but they need to be interpreted alongside the data, the baseline and the scientific objective.</p>
           </section>
 
           <section id="ising">
             <h2>Statistical physics</h2>
-            <p>My first university research placement was in the Theoretical Physics Group at the University of Birmingham. I developed a configurable Python implementation of the two-dimensional Ising model, including local and total energy, magnetisation and spin interactions. I then used the Metropolis algorithm to evolve the lattice across temperatures, initial conditions and Hamiltonian specifications.</p>
-            <p>The project involved more than implementing the update rule. I examined energy and magnetisation over Monte Carlo steps, performed systematic parameter sweeps and used lattice animations to assess convergence and the emergence of low-energy configurations. The work established habits that continue to shape my research: verify local calculations before trusting aggregate output, distinguish equilibration from a final snapshot and use visualisation to diagnose a model rather than simply present it.</p>
+            <p>My first university research placement was in the Theoretical Physics Group at the University of Birmingham. I developed a configurable Python simulation of the two-dimensional Ising model, implementing Hamiltonian, energy, magnetisation and local spin calculations. I then applied Metropolis Monte Carlo sampling to evolve the lattice across temperatures, initial conditions and Hamiltonian specifications.</p>
+            <p>The project involved more than implementing the update rule. I performed systematic parameter sweeps that identified 84 distinct low-energy configurations and analysed convergence through energy, magnetisation and lattice-evolution visualisations. The work established habits that continue to shape my research: verify local calculations before trusting aggregate output, distinguish equilibration from a final snapshot and use visualisation to diagnose a model rather than simply present it. The code and analysis are available in the <a href="https://github.com/AriaKidr/The-Ising-Model-Evolution" target="_blank" rel="noopener" style="color:var(--blue);text-decoration:underline;text-underline-offset:3px">Ising model repository</a>.</p>
           </section>
 
           <section id="astronomy">
             <h2>Astronomy and machine learning</h2>
-            <p>I subsequently joined the Sun, Stars and Exoplanets Group for a summer research internship focused on stellar power spectra. I developed and refined an autoencoder for denoising and reconstruction, generated physically informed synthetic spectra and prepared Kepler observations for training and validation.</p>
-            <p>The central question was whether the learned representation preserved scientifically relevant information. I therefore examined learning curves, reconstruction losses and residuals, compared the model with signal-processing baselines and investigated nonlinear recovery of the frequency of maximum oscillation power. The project strengthened my interest in scientific machine learning, particularly the use of simulated data to provide control and real observations to expose missing assumptions.</p>
-            <p>The work also gave me experience discussing results within a research group and presenting the project at the 2026 National Astronomy Meeting. The project code and supporting material are available in the <a href="https://github.com/AriaKidr/Using-Astroseismic-Data-for-a-Denoising-Autoencoder" target="_blank" rel="noopener" style="color:var(--blue);text-decoration:underline;text-underline-offset:3px">public GitHub repository</a>.</p>
+            <p>I subsequently joined the Sun, Stars and Exoplanets Group for a summer research internship focused on stellar power spectra. I developed and optimised an autoencoder for denoising and reconstruction, generated physically informed synthetic spectra and processed Kepler observations for approximately 5,000 red giants into reproducible training and validation datasets.</p>
+            <p>The central question was whether the learned latent representation preserved scientifically relevant information. I therefore examined learning curves, reconstruction losses and residual diagnostics, compared the model with signal-processing baselines and investigated nonlinear recovery of the frequency of maximum oscillation power. The project strengthened my interest in scientific machine learning, particularly the use of simulated data to provide control and real observations to expose missing assumptions.</p>
+            <p>The work also gave me experience discussing results within a research group and presenting the research at the 2026 National Astronomy Meeting. The project code and supporting material are available in the <a href="https://github.com/AriaKidr/Using-Astroseismic-Data-for-a-Denoising-Autoencoder" target="_blank" rel="noopener" style="color:var(--blue);text-decoration:underline;text-underline-offset:3px">public GitHub repository</a>.</p>
           </section>
 
-          <section id="quant">
-            <h2>Quantitative research</h2>
-            <p>My current independent project applies the same research principles to derivatives pricing. I am investigating GPU-accelerated machine learning for calibration of the Heston stochastic-volatility model. The project begins with transparent foundations in Black-Scholes valuation, implied volatility and Monte Carlo simulation before introducing a neural surrogate for a more expensive calibration procedure.</p>
-            <p>The intended evaluation covers pricing accuracy across parameter space, parameter recovery, computational performance and behaviour outside the training distribution. The objective is not simply to demonstrate that a neural network is fast, but to determine when acceleration is reliable and when it compromises stability or interpretation.</p>
-            <p>This work forms part of a broader interest in quantitative research, including probability, time-series methods, optimisation, careful backtesting and the distinction between statistical predictability and practical implementation.</p>
+          <section id="hpc">
+            <h2>Scientific computing and HPC</h2>
+            <p>Alongside my research placements, I participate in high-performance computing challenges that test how scientific code behaves at scale. As part of a team of six in the UKRI STFC Computing Insight UK (CIUK) Cluster Challenge in Manchester, I have worked on configuring Linux environments, managing job scheduling and benchmarking scientific computing workloads under strict competition constraints across challenges set by the University of Edinburgh, Durham University and University College London.</p>
+            <p>Earlier, I completed the BlueBEAR HPC Challenge at the University of Birmingham, tackling five team-based Python, Bash and supercomputing tasks covering galaxy classification, ray tracing and supercomputer network-topology design. Working directly with cluster architectures and job schedulers has reinforced the importance of algorithmic efficiency, reproducible environments and hardware-aware programming in computational physics.</p>
           </section>
 
           <section id="approach">
             <h2>Research approach</h2>
-            <p>I prefer to begin with a specific question and the simplest useful baseline. I value reproducible code, explicit assumptions and tests that reveal when an implementation is wrong. When a model performs well, I want to understand which information supports the result. When it performs badly, I want the failure to clarify the data, the method or the original hypothesis.</p>
-            <p>Communication is also important to my work. I tutor Mathematics and Physics at GCSE and A-Level, which has improved my ability to explain technical ideas precisely and adjust an explanation to its audience.</p>
+            <p>I prefer to begin with a specific question and the simplest useful baseline. I value reproducible code, explicit assumptions and tests that reveal when an implementation is wrong. When a model performs well, I want to understand which physical or statistical structure supports the result. When it performs badly, I want the failure to clarify the data, the method or the original hypothesis.</p>
+            <p>Communication and collaborative problem-solving are also central to my work. Since October 2024, I have tutored Mathematics and Physics at GCSE and A-Level, adapting explanations to individual needs and helping multiple students achieve grades beyond their targets. At university, I also received the Birmingham Project Award for developing a proposal integrating Siemens technologies into sustainable campus education.</p>
           </section>
 
           <section id="next">
             <h2>Next steps</h2>
-            <p>I intend to pursue a PhD after completing my MSci. I am currently considering research directions in quantitative modelling, scientific machine learning, stochastic methods, simulation-based inference, GPU computing and computational physics. The common feature is the need to combine mathematical depth with careful numerical and empirical work.</p>
-            <p>Before then, I am seeking research-intensive internships that provide exposure to larger datasets, stronger validation standards and more demanding computational systems. Outside academic work, my interests include swimming, badminton and film criticism.</p>
+            <p>I intend to pursue a PhD after completing my MSci in 2028. I am particularly interested in research directions across computational physics, scientific machine learning, statistical mechanics, nuclear modelling and high-performance scientific computing. The common feature across these areas is the need to combine mathematical depth with careful numerical and empirical validation.</p>
+            <p>Before then, I am seeking research-intensive internships that provide exposure to complex datasets, rigorous validation standards and demanding computational systems. Outside academic work, I speak English and Kurdish (Sorani), and my interests include swimming, badminton and film criticism.</p>
             <div class="actions"><a class="button primary" href="/cv.pdf" target="_blank" rel="noopener">View CV</a><a class="button" href="https://github.com/AriaKidr" target="_blank" rel="noopener">GitHub</a><a class="button" href="index.html#projects">Selected projects</a></div>
           </section>
         </article>
